@@ -13,6 +13,8 @@ import com.amazonaws.services.sqs.model.DeleteMessageRequest;
 import com.amazonaws.services.sqs.model.DeleteMessageResult;
 import com.amazonaws.services.sqs.model.Message;
 import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
+import com.lovemesomecoding.model.QueueMessage;
+import com.lovemesomecoding.utils.ObjectMapperUtils;
 
 @Service
 public class SQSConsumer {
@@ -77,6 +79,8 @@ public class SQSConsumer {
     }
 
     private void consumeMsg(String jsonMessage) {
+        QueueMessage queueMessage = ObjectMapperUtils.fromJsonString(jsonMessage, QueueMessage.class);
 
+        log.info("title={}", queueMessage.getTitle());
     }
 }

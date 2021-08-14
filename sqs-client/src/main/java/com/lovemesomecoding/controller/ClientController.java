@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lovemesomecoding.model.QueueMessage;
 import com.lovemesomecoding.service.QueueSenderService;
 
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 
+@Api(value = "demos", produces = "Rest API for demos", tags = "Demo", description = "Demo endpoints")
 @Slf4j
 @RestController
 public class ClientController {

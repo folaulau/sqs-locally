@@ -1,6 +1,9 @@
 package com.lovemesomecoding.model;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.Date;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
@@ -21,5 +24,7 @@ public class QueueMessage implements Serializable {
     private String            id;
     private String            title;
     private String            content;
+    private Date              now;
+    private String            uuid;
 
 }
