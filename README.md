@@ -1,1 +1,1 @@
-# sqs-locally
+Run docker-compose.yml
