@@ -1,4 +1,4 @@
-Run docker-compose.yml
+Run docker-compose up
 
 Reference: https://github.com/localstack/localstack
 
