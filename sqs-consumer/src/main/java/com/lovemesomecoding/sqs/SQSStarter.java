@@ -13,6 +13,6 @@ public class SQSStarter {
 	
 	@PostConstruct
 	public void init() {
-		sqsListener.processQueue();
+		//sqsListener.processQueue();
 	}
 }
